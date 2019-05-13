@@ -1,0 +1,1 @@
+The solution way of the leetCode program.
