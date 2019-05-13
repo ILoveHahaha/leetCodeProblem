@@ -16,3 +16,18 @@ let isPalindrome = function (x) {
         return false
     }
 }
+
+let isPalindrome1 = function (x) {
+    let temp = x.toString()
+    let state = false
+    for (let a = 0; a < temp.length; a++) {
+        if (temp[a] !== temp[temp.length - 1 - a]) {
+            break
+        }
+        if (a === Math.floor(temp.length / 2)) {
+            state = true
+            break
+        }
+    }
+    return state
+}
