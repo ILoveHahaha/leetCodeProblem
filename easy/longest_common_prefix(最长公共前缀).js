@@ -4,7 +4,7 @@
  */
 var longestCommonPrefix = function(strs) {
     let temp = '', currIndex = 0, strIndex = 0, tempChar = ''
-    if (strs[0][0]) {
+    if (strs[0]) {
         tempChar = strs[0][0]
     }
     else return temp
